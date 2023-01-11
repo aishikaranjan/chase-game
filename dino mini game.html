@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>T-Rex Game</title>
+    <title>Obstacle Game</title>
+    <style>
+      /* CSS for styling the game */
+      body {  background-color: #7f7f7f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #character {  position: relative;
+        width: 50px;
+        animation: run 1s infinite linear;}
+
+      @keyframes move  {
+         0% { transform: translateX(0); }
+        100% { transform: translateX(-100px); }
+      }
+   
+    </style>
   </head>
   <body>
-    <div id="trex"></div>
+    <div id="character"></div>
     <div class="obstacle"></div>
     <div class="obstacle" style="left: 100px"></div>
     <div class="obstacle" style="left: 200px"></div>
